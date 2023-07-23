@@ -1,6 +1,8 @@
 import Image from "next/image";
 
+
 import MainCard from "./MainCard";
+
 
 // export default function Projects() {
 //   return (
