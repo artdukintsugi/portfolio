@@ -8,6 +8,7 @@ export default function Footer() {
           className="footer-link"
           href="https://github.com/yonysek"
           target="_blank"
+          aria-label="Look at my Github"
         >
           <IoLogoGithub />
         </a>
@@ -15,6 +16,7 @@ export default function Footer() {
           className="footer-link"
           href="mailto:jonas.vybiral.jv@gmail.com"
           target="_blank"
+          aria-label="Send me an email"
         >
           <IoMailOutline />
         </a>
