@@ -1,3 +1,3 @@
-export default function Projects() {
+export default function Skills() {
   return <div>lmao tohle jeste nefunguje</div>;
 }
