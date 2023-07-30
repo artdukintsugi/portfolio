@@ -19,7 +19,7 @@ export default function MainCard({
       >
         {children}
         <div className=" text-slate-700">
-          <h1 className="text-4xl font-bold leading-[1.2] text-center transition-all duration-200 lg:text-start sm:text-6xl sm:leading-[1.2] gradient">
+          <h1 className="text-4xl font-extrabold leading-[1.2] text-center transition-all duration-200 lg:text-start sm:text-6xl sm:leading-[1.2] gradient">
             {title}
           </h1>
           <p className="text-sm font-light text-center transition-all duration-200 lg:text-start group-hover:font-medium lg:text-lg">

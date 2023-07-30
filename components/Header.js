@@ -6,7 +6,7 @@ export default function Header() {
       id="header"
       className="section w-screen h-[50vh] sm:h-[70vh] flex flex-col items-center justify-center gap-4"
     >
-      <h1 className="text-5xl font-black leading-normal text-center text-transparent lg:text-9xl sm:text-7xl md:text-8xl gradient">
+      <h1 className="text-5xl font-black leading-normal text-center lg:text-9xl sm:text-7xl md:text-8xl gradient">
         Hi, I am Jony.
       </h1>
       <h2 className="flex flex-row items-center justify-center text-base font-semibold text-center md:text-xl text-slate-700">

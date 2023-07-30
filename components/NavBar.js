@@ -8,7 +8,7 @@ export default function NavBar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ type: "spring", stiffness: 250, delay: 0.5 }}
-      className="sticky z-50 flex items-center justify-between w-screen h-12 px-8 my-8 text-xs sm:h-16 xl:px-64 md:px-32 sm:text-base top-8"
+      className="sticky z-50 flex items-center justify-between w-screen h-12 px-8 mb-16 text-xs sm:h-16 xl:px-64 md:px-32 sm:text-base top-8"
     >
       <Icon />
       <Sections />
@@ -21,12 +21,37 @@ function Icon() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  const [bgProgress, setBgProgress] = useState();
+
+  useEffect(() => {
+    const handleScrollProgress = () => {
+      const bodyElRect = document.querySelector("body").getBoundingClientRect();
+      const bodyHeight = 1664;
+      const scrollPosition = Math.abs(bodyElRect.top);
+      const percentage = scrollPosition / bodyHeight;
+
+      setBgProgress(64 - 64 * percentage);
+      console.log(bgProgress);
+    };
+
+    handleScrollProgress();
+
+    window.addEventListener("scroll", handleScrollProgress);
+
+    // Cleanup the event listener on component unmount
+    return () => window.removeEventListener("scroll", handleScrollProgress);
+  }, [bgProgress]);
+
   return (
     <div
       className="relative h-full overflow-hidden transition-all bg-white cursor-pointer text-blob aspect-square hover:scale-[0.9] hidden min-[390px]:block"
       onClick={handleScrollToTop}
     >
-      <Image src="/memoji.png" alt="personal memoji" fill />
+      <Image className="z-10" src="/memoji.png" alt="personal memoji" fill />
+      <div
+        className={`relative bg-slate-200 w-52 h-52`}
+        style={{ bottom: -bgProgress }}
+      ></div>
     </div>
   );
 }
@@ -37,7 +62,7 @@ function Sections() {
   useEffect(() => {
     // Function to handle scroll events and update the active section
     const handleScroll = () => {
-      const sections = ["projects", "skills", "about"]; // The IDs of your sections
+      const sections = ["header", "projects", "skills", "about"]; // The IDs of my sections
 
       // Find the section that is currently in view, exactly in the middle
       const active = sections.find((section) => {
@@ -53,7 +78,7 @@ function Sections() {
       });
 
       // Update the active section
-      if (active !== activeSection) {
+      if (active !== activeSection && active) {
         setActiveSection(active);
       }
     };
@@ -66,11 +91,9 @@ function Sections() {
   }, [activeSection]);
 
   // Function to handle smooth scroll to the middle of the section
-  const handleNavLinkClick = (event, section) => {
-    // Prevent the default behavior of the anchor tag (avoid URL change on click)
-    event.preventDefault();
+  const handleNavLinkClick = (e, section) => {
+    e.preventDefault();
 
-    // Get the target element using the section ID
     const el = document.getElementById(section);
     if (el) {
       // Calculate the window height and section height
@@ -83,7 +106,6 @@ function Sections() {
       // Calculate the final scroll position by subtracting the offset from the top position of the section
       const scrollPosition = el.offsetTop - offset;
 
-      // Perform the smooth scroll to the calculated position
       window.scrollTo({ top: scrollPosition, behavior: "smooth" });
     }
   };

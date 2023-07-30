@@ -42,4 +42,8 @@ body {
   .footer-link {
     @apply p-2 transition-all duration-200 shadow-md rounded-xl hover:shadow-xl hover:scale-105;
   }
+
+  /* .line-height {
+    @apply leading-5 sm:leading-5 md:leading-5 lg:leading-5 xl:leading-5 2xl:leading-5;
+  } */
 }

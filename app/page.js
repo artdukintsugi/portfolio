@@ -13,11 +13,7 @@ export default function Home() {
   return (
     <div className="">
       <NavBar />
-      <div
-        initial={{ y: 1000 }}
-        animate={{ y: 0 }}
-        transition={{ type: "spring", stiffness: 50, delay: 0 }}
-      >
+      <div>
         <Header />
         <Projects />
         <Skills />
