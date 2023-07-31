@@ -24,14 +24,22 @@ function Icon() {
   const [bgProgress, setBgProgress] = useState();
 
   useEffect(() => {
+    // const handleScrollProgress = () => {
+    //   const bodyElRect = document.querySelector("body").getBoundingClientRect();
+    //   const bodyHeight = 1664;
+    //   const scrollPosition = Math.abs(bodyElRect.top);
+    //   const percentage = scrollPosition / bodyHeight;
+
+    //   setBgProgress(64 - 64 * percentage);
+    // };
+
     const handleScrollProgress = () => {
       const bodyElRect = document.querySelector("body").getBoundingClientRect();
-      const bodyHeight = 1664;
+      const bodyHeight = document.body.scrollHeight - window.innerHeight;
       const scrollPosition = Math.abs(bodyElRect.top);
       const percentage = scrollPosition / bodyHeight;
 
       setBgProgress(64 - 64 * percentage);
-      console.log(bgProgress);
     };
 
     handleScrollProgress();
@@ -49,7 +57,7 @@ function Icon() {
     >
       <Image className="z-10" src="/memoji.png" alt="personal memoji" fill />
       <div
-        className={`relative bg-slate-200 w-52 h-52`}
+        className={`relative bg-slate-200  w-52 h-52`}
         style={{ bottom: -bgProgress }}
       ></div>
     </div>
