@@ -4,8 +4,8 @@ import Footer from "../../components/Footer.js";
 export default function Projects() {
   return (
     <div>
-      <header className="flex flex-col items-center justify-center gap-4 p-32 px-16 sm:px-32 h-30 ">
-        <h1 className="text-5xl font-black !leading-normal text-center lg:text-9xl sm:text-7xl md:text-8xl gradient text-fuchsia-700 sm:text-amber-500 md:text-blue-700 lg:text-red-500 xl:text-emerald-500">
+      <header className="flex flex-col items-center justify-center gap-4 p-8 px-16 sm:p-16 lg:p-32 sm:px-32 h-30 ">
+        <h1 className="text-5xl font-black !leading-normal text-center lg:text-9xl sm:text-7xl md:text-8xl gradient text-fuchsia-700 sm:text-amber-500 md:text-blue-700 lg:text-red-500 xl:text-emerald-500 2xl:text-black">
           Projects
         </h1>
         <h3 className="max-w-3xl text-xs text-center text-slate-500 md:text-base">
@@ -14,25 +14,31 @@ export default function Projects() {
           questions please feel free to contact me.
         </h3>
       </header>
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center w-screen">
         <Project
-          name="Discord clone"
-          img="dcclone.png"
-          url="https://discord-clone-yonas.vercel.app/"
-          text="Very sofisticated Discord clone that is surely working LOL"
+          name="My portfolio"
+          img="portfolio.png"
+          github="https://github.com/yonysek/portfolio"
+          text="My surprisingly biggest project is this portfolio. Created with Next.js using Tailwind CSS."
         />
         <Project
           name="Discord clone"
           img="dcclone.png"
           url="https://discord-clone-yonas.vercel.app/"
-          text="Very sofisticated Discord clone that is surely working LOL"
+          github="https://github.com/yonysek/discord-clone"
+          text="A Discord clone with implemented dark mode through React hooks and animation from Framer Motion made using Next.js."
         />
         <Project
-          name="Discord clone"
-          img="dcclone.png"
-          url="https://discord-clone-yonas.vercel.app/"
-          text="Very sofisticated Discord clone that is surely working LOL"
+          name="Password generator"
+          img="passcreator.png"
+          url="https://password-generator-yonas.netlify.app/"
+          github="https://github.com/yonysek/password-creator"
+          text="Password generator app with custom settings created in Vue.js and Tailwind CSS (obviously)."
         />
+
+        <h1 className="z-10 px-4 py-2 my-24 text-2xl font-black leading-normal text-center border-2 shadow-lg opacity-50 rounded-xl bg- border-slate-400 gradient lg:text-5xl sm:text-3xl md:text-4xl bg-slate-50">
+          MORE COMING!
+        </h1>
       </div>
       <div className="mt-8">
         <Footer />

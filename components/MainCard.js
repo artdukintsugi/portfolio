@@ -11,7 +11,7 @@ export default function MainCard({
   return (
     <div
       id={id}
-      className="my-16 lg:my-24 w-screen h-80 min-[450px]:h-[26rem] sm:h-[26rem] md:h-96 flex flex-col items-center justify-center "
+      className="my-16 lg:my-24 w-screen h-80 min-[450px]:h-[26rem] sm:h-[26rem] md:h-96 flex flex-col items-center justify-center"
     >
       <Link
         href={`/${id}`}
@@ -35,4 +35,4 @@ export default function MainCard({
   );
 }
 
-// text-fuchsia-700 sm:text-amber-500 md:text-blue-700 lg:text-red-500 xl:text-emerald-500
+// text-fuchsia-700 sm:text-amber-500 md:text-blue-700 lg:text-red-500 xl:text-emerald-500 2xl:text-black
