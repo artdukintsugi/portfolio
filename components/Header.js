@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { IoLocationOutline } from "react-icons/io5";
 
 export default function Header() {
@@ -6,7 +7,10 @@ export default function Header() {
       id="header"
       className="section w-screen h-[50vh] sm:h-[70vh] flex flex-col items-center justify-center gap-4"
     >
-      <h1 className="text-5xl font-black leading-normal text-center lg:text-9xl sm:text-7xl md:text-8xl gradient">
+      <h1
+        id="my-element"
+        className="text-5xl font-black !leading-normal text-center lg:text-9xl sm:text-7xl md:text-8xl gradient"
+      >
         Hi, I am Jony.
       </h1>
       <h2 className="flex flex-row items-center justify-center text-base font-semibold text-center md:text-xl text-slate-700">
@@ -21,5 +25,3 @@ export default function Header() {
     </div>
   );
 }
-
-// text-fuchsia-700 sm:text-amber-500 md:text-blue-700 lg:text-red-500 xl:text-emerald-500

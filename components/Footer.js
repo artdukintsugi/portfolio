@@ -2,7 +2,7 @@ import { IoLogoGithub, IoMailOutline } from "react-icons/io5";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col gap-4 justify-center items-center w-full h-[30vh] bg-slate-100 ">
+    <footer className="flex flex-col items-center justify-center w-full h-64 gap-4 bg-slate-100 ">
       <div className="flex items-center justify-center gap-4 text-4xl">
         <a
           className="footer-link"
