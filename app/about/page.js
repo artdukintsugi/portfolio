@@ -41,14 +41,18 @@ export default function About() {
               </h2>
 
               <div className="flex items-center justify-center gap-4">
-                <span className="text-lg font-extrabold ">{age}</span>
+                <span className="text-base font-extrabold md:text-lg ">
+                  {age}
+                </span>
                 <div className="w-full h-2 overflow-hidden rounded-full bg-slate-200">
                   <div
                     className="h-full bg-slate-700"
                     style={{ width: `${percentage}%` }}
                   ></div>
                 </div>
-                <span className="text-lg font-bold opacity-75">{age + 1}</span>
+                <span className="text-base font-bold opacity-50 md:text-lg">
+                  {age + 1}
+                </span>
               </div>
             </div>
           </div>
