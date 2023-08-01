@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  @apply text-slate-700;
 }
 
 body {
@@ -41,6 +42,14 @@ body {
 
   .footer-link {
     @apply p-2 transition-all duration-200 shadow-md rounded-xl hover:shadow-xl hover:scale-105;
+  }
+
+  .card {
+    @apply hover:scale-[1.01] hover:shadow-2xl shadow-xl rounded-2xl md:rounded-[2rem] transition-all duration-200  bg-slate-100 hover:bg-slate-50 p-4 sm:p-8 md:p-12 lg:p-16;
+  }
+
+  .breakpoints {
+    @apply text-fuchsia-700 sm:text-amber-500 md:text-blue-700 lg:text-red-500 xl:text-emerald-500 2xl:text-black;
   }
 
   /* .line-height {

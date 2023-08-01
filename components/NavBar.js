@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 export default function NavBar() {
   return (
@@ -57,7 +57,7 @@ function Icon() {
     >
       <Image className="z-10" src="/memoji.png" alt="personal memoji" fill />
       <div
-        className={`relative bg-slate-200  w-52 h-52`}
+        className="relative bg-slate-200  w-52 h-52"
         style={{ bottom: -bgProgress }}
       ></div>
     </div>

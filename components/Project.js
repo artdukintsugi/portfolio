@@ -26,7 +26,7 @@ export default function Project({ name, url, github, text, img }) {
   }
 
   return (
-    <div className="transition-all duration-200 flex flex-col md:flex-row justify-center gap-4 w-2/3 md:w-4/5 lg:w-3/5 my-4 lg:my-8 bg-slate-100 hover:bg-slate-50 hover:scale-[1.02] hover:shadow-2xl shadow-xl rounded-[2rem] p-8">
+    <div className="transition-all duration-200 flex flex-col md:flex-row justify-center gap-4 w-2/3 md:w-4/5 my-4 lg:my-8 bg-slate-100 hover:bg-slate-50 hover:scale-[1.02] hover:shadow-2xl shadow-xl rounded-[2rem] p-8">
       <div className="relative w-full md:w-1/2 2xl:w-1/3 aspect-video">
         <Image className="rounded-md" fill src={`/${img}`} alt={name} />{" "}
       </div>
