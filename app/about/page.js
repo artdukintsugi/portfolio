@@ -29,7 +29,12 @@ export default function About() {
       <div className="my-16 lg:my-24 px-16 md:px-32 xl:px-64 grid grid-cols-[1fr_2fr] grid-rows-4 gap-4">
         <div className="flex items-center justify-start col-span-2 gap-8 md:gap-16 card">
           <div className="relative overflow-hidden rounded-full w-36 sm:w-44 md:w-64 aspect-square">
-            <Image alt="photo of me again" src="/me_2.jpeg" fill />
+            <Image
+              sizes="200px"
+              alt="photo of me again"
+              src="/me_2.jpeg"
+              fill
+            />
           </div>
           <div className="flex flex-col items-start w-full h-full justify-evenly">
             <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl gradient !leading-[1.2] font-extrabold breakpoints">

@@ -26,20 +26,19 @@ export default function Projects() {
           text="My surprisingly biggest project is this portfolio. Created with Next.js using TailwindCSS."
         />
         <Project
+          name="Password generator"
+          img="passcreator.png"
+          url="https://password-generator-yonas.netlify.app/"
+          github="https://github.com/yonysek/password-creator"
+          text="Password generator app with custom settings created in Vue.js and TailwindCSS."
+        />
+        <Project
           name="Discord clone"
           img="dcclone.png"
           url="https://discord-clone-yonas.vercel.app/"
           github="https://github.com/yonysek/discord-clone"
           text="A Discord clone with implemented dark mode and animation from Framer Motion made using Next.js with TailwindCSS."
         />
-        <Project
-          name="Password generator"
-          img="passcreator.png"
-          url="https://password-generator-yonas.netlify.app/"
-          github="https://github.com/yonysek/password-creator"
-          text="Password generator app with custom settings created in Vue.js and TailwindCSS (obviously)."
-        />
-
         <h1 className="z-10 px-4 py-2 my-24 text-2xl font-black leading-normal text-center border-2 shadow-lg opacity-50 rounded-xl bg- border-slate-400 gradient lg:text-5xl sm:text-3xl md:text-4xl bg-slate-50">
           MORE COMING!
         </h1>
