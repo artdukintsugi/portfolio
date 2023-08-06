@@ -4,12 +4,10 @@
 
 html {
   scroll-behavior: smooth;
-  overflow: hidden;
   @apply text-slate-700;
 }
 
 body {
-  overflow: hidden;
   @apply bg-slate-50;
 }
 
