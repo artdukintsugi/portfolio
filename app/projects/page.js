@@ -33,6 +33,13 @@ export default function Projects() {
           text="Password generator app with custom settings created in Vue.js and TailwindCSS."
         />
         <Project
+          name="Haunted House"
+          img="hauntedhouse.png"
+          url="https://haunted-house-yonysek.vercel.app/"
+          github="https://github.com/yonysek/haunted-house"
+          description="A small scene created using Three.js with imported materials."
+        />
+        <Project
           name="Discord clone"
           img="dcclone.png"
           url="https://discord-clone-yonas.vercel.app/"
