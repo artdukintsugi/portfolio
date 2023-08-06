@@ -45,6 +45,7 @@ export default function Projects() {
           url="https://galaxy-generator-yonysek.vercel.app/"
           github="https://github.com/yonysek/galaxy-generator"
           text="A small scene created using Three.js. You can tweak different values to get more results."
+          text="A small scene created using Three.js with imported materials."
         />
         <Project
           name="Discord clone"
