@@ -37,7 +37,7 @@ export default function Projects() {
           img="hauntedhouse.png"
           url="https://haunted-house-yonysek.vercel.app/"
           github="https://github.com/yonysek/haunted-house"
-          description="A small scene created using Three.js with imported materials."
+          text="A small scene created using Three.js with imported materials."
         />
         <Project
           name="Discord clone"
