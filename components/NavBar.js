@@ -57,7 +57,7 @@ function Icon() {
     >
       <Image className="z-10" src="/memoji.png" alt="personal memoji" fill />
       <div
-        className="relative bg-slate-200  w-52 h-52"
+        className="relative bg-slate-200 w-52 h-52"
         style={{ bottom: -bgProgress }}
       ></div>
     </div>
@@ -70,7 +70,7 @@ function Sections() {
   useEffect(() => {
     // Function to handle scroll events and update the active section
     const handleScroll = () => {
-      const sections = ["header", "projects", "skills", "about"]; // The IDs of my sections
+      const sections = ["header", "projects", "about"]; // The IDs of my sections
 
       // Find the section that is currently in view, exactly in the middle
       const active = sections.find((section) => {
@@ -129,15 +129,7 @@ function Sections() {
       >
         <span>Projects</span>
       </a>
-      <a
-        className={`nav-el ${
-          activeSection === "skills" ? "active-nav-el" : ""
-        }`}
-        href="#skills"
-        onClick={(e) => handleNavLinkClick(e, "skills")}
-      >
-        <span>Skills</span>
-      </a>
+
       <a
         className={`nav-el ${activeSection === "about" ? "active-nav-el" : ""}`}
         href="#about"
