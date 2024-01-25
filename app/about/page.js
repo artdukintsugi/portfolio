@@ -10,12 +10,32 @@ export default function About() {
     const currentDate = new Date();
     const currentYear = currentDate.getFullYear();
     const birthYear = birthDate.getFullYear();
-    const age = currentYear - birthYear;
-    const nextBirthday = new Date(birthDate);
-    nextBirthday.setFullYear(currentYear);
-    if (nextBirthday < currentDate) {
-      nextBirthday.setFullYear(currentYear + 1);
+
+    let age = currentYear - birthYear;
+    let nextBirthday = new Date(
+      currentYear + 1,
+      birthDate.getMonth(),
+      birthDate.getDate()
+    );
+
+    const currentMonth = currentDate.getMonth();
+    const birthMonth = birthDate.getMonth();
+
+    if (currentMonth < birthMonth) {
+      age--;
+      nextBirthday = new Date(currentYear, birthMonth, birthDate.getDate());
+    } else if (currentMonth === birthMonth) {
+      const currentDay = currentDate.getDate();
+      const birthDay = birthDate.getDate();
+
+      if (currentDay < birthDay) {
+        age--;
+        nextBirthday = new Date(currentYear, birthMonth, birthDay);
+      }
     }
+
+    console.log(age, nextBirthday);
+
     const timeDiff = nextBirthday - currentDate;
     const percentage = (1 - timeDiff / (1000 * 60 * 60 * 24 * 365)) * 100;
     return { age, percentage };
