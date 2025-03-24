@@ -22,7 +22,7 @@ export default function Footer() {
         </a>
       </div>
       <h3 className="text-xs font-light sm:text-sm">
-        Copyright © {new Date().getFullYear()} Jonáš Vybíral. All rights
+        Copyright © {new Date().getFullYear()} Evelyn Vybíralů. All rights
         reserved.
       </h3>
     </footer>
