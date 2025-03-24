@@ -51,9 +51,11 @@ export default function About() {
           <div className="relative overflow-hidden rounded-full w-36 sm:w-44 md:w-64 aspect-square">
             <Image
               sizes="200px"
+              width="300"
+              height="300"
               alt="photo of me again"
-              src="/me_2.jpeg"
-              fill
+              src="/me2.jpg"
+              className="object-bottom"
             />
           </div>
           <div className="flex flex-col items-start w-full h-full justify-evenly">
