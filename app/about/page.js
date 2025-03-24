@@ -54,7 +54,7 @@ export default function About() {
               width="300"
               height="300"
               alt="photo of me again"
-              src="/me2.jpg"
+              src="/me2.JPG"
               className="object-bottom"
             />
           </div>
