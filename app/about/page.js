@@ -58,7 +58,7 @@ export default function About() {
           </div>
           <div className="flex flex-col items-start w-full h-full justify-evenly">
             <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl gradient !leading-[1.2] font-extrabold breakpoints">
-              Jonáš Vybíral
+              Evelyn Vybíralů
             </h1>
             <div className="w-full">
               <h2 className="text-base font-semibold sm:text-lg">
